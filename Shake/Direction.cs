@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class Snake:Figure
+    enum Direction
     {
-        public Snake(Point tail, int lenght, Direction direction)
-        {
-
-        }
+        LEFT,
+        RIGHT,
+        UP,
+        DOWN
     }
 }

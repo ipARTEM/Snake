@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Shake
+namespace Snake
 {
     class Program
     {
@@ -22,10 +22,6 @@ namespace Shake
 
             //Отрисовка точек
             Point p = new Point(4,5,'*');
-            p.Draw();
-
-            
-            
 
         }
     }
