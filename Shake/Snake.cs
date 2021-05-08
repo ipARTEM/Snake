@@ -8,8 +8,9 @@ namespace Snake
 {
     class Snake:Figure
     {
-        public Snake(Point tail, int lenght, Direction direction)
+        public Snake(Point tail, int length, Direction direction)
         {
+            pList = new List<Point>();
             for (int i = 0; i < length; i++)
             {
                 Point p = new Point(tail);
