@@ -17,7 +17,7 @@ namespace Snake
 
         }
 
-        public Point(int _x, int _y,char _sym)
+        public Point(int _x, int _y, char _sym)
         {
             x = _x;
             y = _y;
@@ -32,7 +32,7 @@ namespace Snake
 
         public void Move(int offset, Direction direction)
         {
-            if (direction==Direction.RIGHT)
+            if (direction == Direction.RIGHT)
             {
                 x = x + offset;
             }
@@ -48,6 +48,11 @@ namespace Snake
             {
                 y = y + offset;
             }
+        }
+
+        public bool IsHit(Point p)
+        {
+            return p.x == this.x && p.y == this.y;
         }
 
 
